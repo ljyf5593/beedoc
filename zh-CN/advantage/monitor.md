@@ -9,14 +9,14 @@ sort: 1
 
 >>>为了安全，建议用户在防火墙中把 8088 端口给屏蔽了。
 
-默认监控是关闭的，你可以通过设置参数配置开启监控：
+默认监控是关闭的，你可以通过在配置文件中设置来开启监控：
 
-	beego.EnableAdmin = true
+	EnableDocs = true,
 	
-而且你还可以修改监听的地址和端口：
+而且你还可以通过配置文件来修改监听的地址和端口：
 
-	beego.AdminHttpAddr = "localhost"
-	beego.AdminHttpPort = 8088
+	AdminAddr = "localhost"
+	AdminPort = 8088
 	
 打开浏览器，输入 URL：`http://localhost:8088/`，你会看到一句欢迎词：`Welcome to Admin Dashboard`。
 
